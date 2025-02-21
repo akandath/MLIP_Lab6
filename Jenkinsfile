@@ -16,12 +16,11 @@ pipeline {
                 echo 'Test Step: We run testing tool like pytest here'
 
                 # TODO fill out the path to conda here
-                source /opt/anaconda3/etc/profile.d/conda.sh
+                source mlip/bin/activate
                 
 
                 # TODO Complete the command to run pytest
-                conda activate mlip_lab6
-                pytest
+                pytest --maxfail=1 --disable-warnings -q
                 
 
                 echo 'pytest not runned'
