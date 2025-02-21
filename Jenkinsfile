@@ -17,7 +17,6 @@ pipeline {
 
                 # TODO fill out the path to conda here
                 sudo /home/akandath/miniconda3/bin/conda init bash
-                source ~/.bashrc
 
                 
 
