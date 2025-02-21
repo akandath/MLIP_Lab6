@@ -17,9 +17,10 @@ pipeline {
 
                 # TODO fill out the path to conda here
                 source /opt/anaconda3/etc/profile.d/conda.sh
+                
 
                 # TODO Complete the command to run pytest
-                conda activate base
+                conda activate mlip_lab6
                 pytest
                 
 
