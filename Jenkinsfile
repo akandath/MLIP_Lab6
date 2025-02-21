@@ -16,10 +16,12 @@ pipeline {
                 echo 'Test Step: We run testing tool like pytest here'
 
                 # TODO fill out the path to conda here
-                sudo /opt/anaconda3/bin/conda init
+                source /opt/anaconda3/etc/profile.d/conda.sh
 
                 # TODO Complete the command to run pytest
-                sudo /opt/anaconda3/bin/conda run -n base pytest
+                conda activate base
+                pytest
+                
 
                 echo 'pytest not runned'
                 exit 1 #comment this line after implementing Jenkinsfile
