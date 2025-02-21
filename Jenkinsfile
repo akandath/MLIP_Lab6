@@ -22,7 +22,7 @@ pipeline {
                 
 
                 # TODO Complete the command to run pytest
-                sudo /home/akandath/miniconda3/bin/conda run -n mlip pytest
+                conda run -n mlip pytest
                 
 
                 echo 'pytest not runned'
